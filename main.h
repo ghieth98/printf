@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef PRINTF_H
+#define PRINTF_H
 
 #define BUFSIZE 1024
 #include <stdarg.h>
@@ -7,7 +7,7 @@
 /**
  * struct spec_types - Struct to get function of specifier
  * @spec: specifier
- * @f: the function associated
+ * @f: The function associated
  */
 typedef struct spec_types
 {
