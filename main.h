@@ -1,5 +1,5 @@
-#ifndef PRINTF_H
-#define PRINTF_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #define BUFSIZE 1024
 #include <stdarg.h>
@@ -31,5 +31,6 @@ char *_memcpy(char *dest, char *src, unsigned int n, unsigned int bufferlen);
 int alloc_buffer(char *hold, int hlen, char *buffer, int size, double *total);
 char *rev_find(va_list s);
 char *rot13_find(va_list s);
+
 
 #endif
