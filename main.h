@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef PRINTF_H
+#define PRINTF_H
 
 #define BUFSIZE 1024
 #include <stdarg.h>
@@ -31,6 +31,11 @@ char *_memcpy(char *dest, char *src, unsigned int n, unsigned int bufferlen);
 int alloc_buffer(char *hold, int hlen, char *buffer, int size, double *total);
 char *rev_find(va_list s);
 char *rot13_find(va_list s);
-
+char *binary_find(va_list n);
+char *octal_find(va_list n);
+char *hex_find(va_list n);
+char *HEX_find(va_list n);
+char *address_find(va_list n);
+char *rev_string(char *a, int n);
 
 #endif
