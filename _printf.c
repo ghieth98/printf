@@ -4,8 +4,8 @@
 
 /**
  * _printf - function that prints output
- * @format: character string with 0 to 3 directives
- * Return: the number of characters to be printed
+ * @format: is a charachter string with 0 to 3 directives
+ * Return: the number of charachters to be printed
  */
 
 int _printf(const char *format, ...)
@@ -22,6 +22,8 @@ int _printf(const char *format, ...)
 		return (-1);
 	va_start(valist, format);
 	total = &totalBuffer;
+	for (i = 0; i < BUFSIZE; i++)
+		buffer[i] = 0;
 	for (i = 0; format && format[i]; i++)
 	{
 		if (format[i] == '%')
