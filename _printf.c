@@ -2,6 +2,7 @@
 #include <stddef.h>
 #include <stdio.h>
 
+
 /**
  * _printf - function that prints output
  * @format: is a charachter string with 0 to 3 directives
