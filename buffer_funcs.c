@@ -47,7 +47,7 @@ int alloc_buffer(char *hold, int hlen, char *buffer, int size, double *total)
 	}
 	else
 	{
-		_memcpy(buffer, hold, heln, size);
+		_memcpy(buffer, hold, hlen, size);
 		size += hlen;
 	}
 	return (size);
