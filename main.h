@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef PRINTF_H
+#define PRINTF_H
 
 #define BUFSIZE 1024
 #include <stdarg.h>

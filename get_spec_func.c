@@ -21,10 +21,10 @@ char *(*get_spec_func(char s))(va_list)
 		{"r", rev_find},
 		{"R", rot13_find},
 		{"b", binary_find},
-		{"x", HEX_find},
+		{"x", hex_find},
+		{"X", HEX_find},
 		{"p", address_find},
 		{NULL, NULL}
-
 	};
 
 	for (i = 0; spec_types[i].spec; i++)
@@ -33,3 +33,4 @@ char *(*get_spec_func(char s))(va_list)
 
 	return (spec_types[i].f);
 }
+
